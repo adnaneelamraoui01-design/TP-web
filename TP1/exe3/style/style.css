@@ -1,0 +1,16 @@
+h1{
+    color: aqua;
+}
+h2{
+    color:red;
+    text-decoration: underline red;
+}
+body{
+    color: gray;
+    font-size: larger ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
