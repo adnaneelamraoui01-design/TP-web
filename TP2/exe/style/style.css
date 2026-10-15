@@ -1,0 +1,42 @@
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+}
+
+legend {
+    color: #072e56;
+    background-color: #eaf2f8;
+    padding: 8px 15px;
+    border-left: 8px solid #3498db;
+    border-right: 9px solid #3498db;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+    /* exe*/
+#zone1 {
+    background-color: aqua;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/*rxe3*/
+#message {
+    font-weight: bold;
+}
+
+.erreur {
+    color: #b00020;
+}
+
+.succes {
+    color: #1b7f3b;
+}
