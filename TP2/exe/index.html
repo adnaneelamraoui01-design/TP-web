@@ -33,10 +33,49 @@
     </fieldset>
     <fieldset>
         <legend id="exe41">Exercice 4.1</legend>
+        saisir le 1er nombre:<input type="number" placeholder="n1" id="n1">
+        saisir le 2eme nombre:<input type="number" placeholder="n2" id="n2"><br>
+        <button type="button" onclick="addition()">+</button>
+        <button type="button" onclick="moins()">-</button>
+        <button type="button" onclick="multiplication()">*</button>
+        <button type="button" onclick="division()">/</button> <br>
+        resultat =<input type="text" placeholder="0" id="res" readonly>
+
+        
     </fieldset>
-      <fieldset>
-        <legend id="exe42">Exercice 4.2</legend>
-    </fieldset>
+<fieldset>
+    <legend>Exercice 4.2</legend>
+    <div id="exe42">
+
+        <div id="ecran">0</div>
+
+        <div class="tab">
+            <button type="button" onclick="effacer()">C</button>
+            <button type="button" onclick="retour()">&#9003;</button>
+            <button type="button" onclick="ajouter('/')">/</button>
+            <button type="button" onclick="ajouter('*')">*</button>
+
+            <button type="button" onclick="ajouter('7')">7</button>
+            <button type="button" onclick="ajouter('8')">8</button>
+            <button type="button" onclick="ajouter('9')">9</button>
+            <button type="button" onclick="ajouter('-')">-</button>
+
+            <button type="button" onclick="ajouter('4')">4</button>
+            <button type="button" onclick="ajouter('5')">5</button>
+            <button type="button" onclick="ajouter('6')">6</button>
+            <button type="button" onclick="ajouter('+')">+</button>
+
+            <button type="button" onclick="ajouter('1')">1</button>
+            <button type="button" onclick="ajouter('2')">2</button>
+            <button type="button" onclick="ajouter('3')">3</button>
+            <button type="button" onclick="egal()">=</button>
+
+            <button type="button" class="zero" onclick="ajouter('0')">0</button>
+            <button type="button" onclick="ajouter('.')">.</button>
+        </div>
+
+    </div>
+</fieldset>
     <fieldset>
         <legend id="exe5">Exercice 5</legend>
     </fieldset>

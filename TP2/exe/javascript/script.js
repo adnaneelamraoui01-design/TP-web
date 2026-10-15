@@ -32,3 +32,74 @@ if (nom === "" || email === "") {//champs vide ou non
         msg.textContent = "Formulaire enregistré avec succès !";
     }
 }
+/*exe4*/
+
+function addition(){
+    let num1=document.getElementById("n1").value;
+    let num2=document.getElementById("n2").value;
+    let s=eval(num1)+eval(num2);
+    document.getElementById("res").value=s;
+}
+function moins(){
+    let num1=document.getElementById("n1").value;
+    let num2=document.getElementById("n2").value;
+    let s=eval(num1)-eval(num2);
+    document.getElementById("res").value=s;
+}
+function multiplication(){
+    let num1=document.getElementById("n1").value;
+    let num2=document.getElementById("n2").value;
+    let s=eval(num1)*eval(num2);
+    document.getElementById("res").value=s;
+}
+function division(){
+    let num1=document.getElementById("n1").value;
+    let num2=document.getElementById("n2").value;
+    if(eval(num2) != 0){
+        let s=eval(num1) / eval(num2);
+        document.getElementById("res").value=s;
+    }else{
+        document.getElementById("res").value="on ne peut pas diviser par 0";
+    }
+
+
+}
+//exe42
+// ===== Exercice 4.2 : calculatrice =====
+let expression = "";
+
+function afficher() {
+    document.getElementById("ecran").textContent = expression;
+}
+
+function ajouter(valeur) {
+    if (expression === "Erreur") {
+        expression = "";
+    }
+    expression += valeur;
+    afficher();
+}
+
+function effacer() {
+    expression = "";
+    afficher();
+}
+
+function retour() {
+    expression = expression.slice(0, -1);
+    afficher();
+}
+
+function egal() {
+    try {
+        let res = eval(expression);
+        if (isFinite(res)) {// si le nombre est fini ou non l exemple de divsion par 0
+            expression = String(res);
+        } else {
+            expression = "Erreur";
+        }
+    } catch (e) { // s il detecte une erreu comme ++ ou qq chse n est ps mgque
+        expression = "Erreur";
+    }
+    afficher();
+}

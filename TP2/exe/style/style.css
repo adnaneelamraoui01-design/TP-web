@@ -40,3 +40,48 @@ p {
 .succes {
     color: #1b7f3b;
 }
+/*exe42*/
+#exe42 {
+    width: 240px;
+    margin: auto;
+    padding: 12px;
+    border: 10px solid #0e0ede;
+    border-radius: 15px;
+    background-color: #f7f7f7;
+}
+
+#ecran {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.tab button {
+    height: 40px;
+    font-size: 16px;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.zero {
+    grid-column: span 3;
+}
