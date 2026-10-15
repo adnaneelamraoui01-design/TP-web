@@ -1,0 +1,29 @@
+body {
+  font-family:'Times New Roman', Times, serif ;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+h1{
+    color: aqua;
+
+}
+h2{
+    color :red;
+    text-decoration: underline rgb(138, 45, 45);
+}
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.corr {
+  color: green;
+}
+ 
+.nv {
+  color: red;
+}
+input {
+  padding: 6px;
+  width: 60%;
+}
