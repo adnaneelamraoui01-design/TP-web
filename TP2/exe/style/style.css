@@ -160,3 +160,14 @@ p {
     flex-direction: row; 
     gap: 50px;
 }
+.groupe{
+    border:16px black solid; 
+    width: 280px;
+    height: 150px;
+    border-radius: 20px;
+}
+#tache{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

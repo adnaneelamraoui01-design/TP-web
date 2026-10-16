@@ -108,18 +108,18 @@ const carousel = document.querySelector(".carousl");
 const total = document.querySelectorAll(".ca").length;
 let temp = 0;
 
-function afficher() {
+function affiche() {
   carousel.style.transform = "translateX(" + (-temp * 100) + "%)";
 }
 
 function suivant() {
   temp = (temp+ 1) % total;
-  afficher();
+  affiche();
 }
 
 function precedent() {
   temp = (temp- 1 + total) % total;
-  afficher();
+  affiche();
 }
 /*exe5*/
 const titre = document.getElementById("gestion");
@@ -152,3 +152,21 @@ bt1.addEventListener("mouseleave",function(){
 bt2.addEventListener("mouseleave",function(){
     bt2.style.backgroundColor="#be4929";
 })
+//exe9
+function Ajouter() {
+  let task = document.getElementById("tache").value;
+  if (task.trim() != "") {//trim supprimer les espace au debtu et a la fin de la phrase
+    let li = document.createElement("li");
+    li.textContent = task;
+
+    let boutton = document.createElement("button");
+    boutton.textContent = "supprimer cette tache";// creat de la boutton supp
+    boutton.onclick = function () {
+      li.remove();
+    };
+
+    li.appendChild(boutton);//appendchild ajoute le boutton a linteriseur de la liste
+    document.getElementById("liste").appendChild(li);
+    document.getElementById("tache").value = "";
+  }
+}
