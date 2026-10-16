@@ -128,3 +128,10 @@ const liste = document.getElementById("lise");
 titre.addEventListener("click", function () {
   liste.classList.toggle("res");
 });
+//exe 7
+let temps = 0;
+
+setInterval(function() {
+    temps--;
+    document.getElementById("chrono").innerHTML = temps + " seconde(s)";
+}, 1000);

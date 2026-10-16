@@ -129,3 +129,13 @@ p {
   border: none;
   cursor: pointer;
 }
+/*exe7*/
+#chrono{
+    color: red;
+    background-color: black;
+    width: 90%;
+    padding: 50px;
+    cursor: pointer;
+    font-family: cursive;
+    
+}
