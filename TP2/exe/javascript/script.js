@@ -133,5 +133,22 @@ let temps = 0;
 
 setInterval(function() {
     temps--;
-    document.getElementById("chrono").innerHTML = temps + " seconde(s)";
+    document.getElementById("chrono").innerHTML = "temps ecoules" +temps + " seconde(s)";
 }, 1000);
+//exe8
+let bt1=document.getElementById("bt1-8");
+let bt2=document.getElementById("bt2-8");
+
+
+bt1.addEventListener("mouseenter",function(){
+    bt1.style.backgroundColor="green";
+})
+bt2.addEventListener("mouseenter",function(){
+    bt1.style.backgroundColor="gray";
+})
+bt1.addEventListener("mouseleave",function(){
+    bt2.style.backgroundColor="#3498db";
+})
+bt2.addEventListener("mouseleave",function(){
+    bt2.style.backgroundColor="#be4929";
+})

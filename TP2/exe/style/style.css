@@ -5,7 +5,6 @@ fieldset {
     border: 2px solid #3498db;
     border-radius: 8px;
 }
-
 legend {
     color: #072e56;
     background-color: #eaf2f8;
@@ -138,4 +137,26 @@ p {
     cursor: pointer;
     font-family: cursive;
     
+}/*exe8*/
+#bt1-8{
+    background-color: #3498db;
+}
+#bt2-8{
+    background-color: #be4929;
+}
+.boite{
+    width: 147px;
+    height: 180px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:serif ;
+    cursor: pointer;
+}
+.exe8{
+   display: flex;
+    flex-direction: row; 
+    gap: 50px;
 }
