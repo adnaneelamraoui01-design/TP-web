@@ -103,3 +103,28 @@ function egal() {
     }
     afficher();
 }
+/*exe5*/
+const carousel = document.querySelector(".carousl");
+const total = document.querySelectorAll(".ca").length;
+let temp = 0;
+
+function afficher() {
+  carousel.style.transform = "translateX(" + (-temp * 100) + "%)";
+}
+
+function suivant() {
+  temp = (temp+ 1) % total;
+  afficher();
+}
+
+function precedent() {
+  temp = (temp- 1 + total) % total;
+  afficher();
+}
+/*exe5*/
+const titre = document.getElementById("gestion");
+const liste = document.getElementById("lise");
+
+titre.addEventListener("click", function () {
+  liste.classList.toggle("res");
+});

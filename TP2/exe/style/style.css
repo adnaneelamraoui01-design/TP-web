@@ -85,3 +85,47 @@ p {
 .zero {
     grid-column: span 3;
 }
+/*exe 5*/
+.carouselprinci{
+  width: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.carousl{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.ca{
+      width: 100%;
+  flex-shrink: 0
+}//exe5
+#lise{
+  list-style: none;
+}
+.menu {
+  width: 200px;
+}
+#
+#lise li a {
+  display: block;
+  padding: 10px;
+  color: #2b4156;
+}
+
+#lise li a:hover {
+  background-color: #bdc3c7;
+}
+
+/* Classe qui cache la liste */
+.res {
+  display: none;
+}
+#gestion {
+  width: 100%;
+  padding: 10px;
+  background-color: #a8bfd7;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
