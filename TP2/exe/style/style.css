@@ -170,4 +170,37 @@ p {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}/*exe10*/
+#bto,#btf{
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer; 
+  padding: 10px 24px;
+  font-size: 16px;
+  font-family: cursive;
+}
+
+.notif{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #b4ae0a;
+}
+/*exe15*/
+#bt15{
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px ;
+    background-color: purple;
+    color:black;
+}
+body.sombre{
+    background-color: #222;
+      color: white;
+}
+.exe15{
+    text-align:right;
 }

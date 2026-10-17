@@ -169,4 +169,30 @@ function Ajouter() {
     document.getElementById("liste").appendChild(li);
     document.getElementById("tache").value = "";
   }
+} //exe 10
+function ouvrir(){//afficher notif
+    document.getElementById("notif").style.display="block";
 }
+function fermer(){//fermer notif
+document.getElementById("notif").style.display="none";  
+}
+//exe 15 
+function basculer(){
+    document.body.classList.toggle("sombre");
+
+    if(document.body.classList.contains("sombre")){
+        localStorage.setItem("theme","sombre");
+    }else{
+        localStorage.setItem("theme","clair");
+    }
+}
+
+
+if(localStorage.getItem("theme")==="sombre"){
+    document.body.classList.add("sombre");
+}/*clas list : pour manipuler les element de css
+toggle("sombre") basclule la classe interne , si elle est deja presente elle l enleve ; si elle est absencete elle ajoute
+body.classlist.contains(sombre):verifie si l element body possede actuelement la classe interne renvoie true or false
+localstorage: stocker des donne de maniere permanante dans le nav
+.setItem(1,2) enrigistre 2 sur 1
+*/
