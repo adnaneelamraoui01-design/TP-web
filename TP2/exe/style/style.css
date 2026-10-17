@@ -229,3 +229,27 @@ body.sombre{
     height: 40px;
     
 }
+/*exe14*/
+.zones {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-family:cursive;
+}
+.zone {
+  width: 200px;
+  min-height: 200px;
+  border: 2px dashed #888;
+  border-radius: 6px;
+  padding: 10px;
+}
+.element {
+  background-color: #43a047;
+  color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  cursor: move;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

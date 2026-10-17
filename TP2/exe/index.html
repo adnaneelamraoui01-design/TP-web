@@ -137,6 +137,10 @@
     </fieldset>
     <fieldset>
         <legend id="exe12">Exercice 12</legend>
+        <div class="exe12">
+            <h2>Responsive avec JS</h2>
+            <div></div>
+        </div>
     </fieldset>
     <fieldset>
         <legend id="exe13">Exercice 13</legend>
@@ -150,7 +154,26 @@
     </fieldset>
     <fieldset>
         <legend id="exe14">Exercice 14</legend>
+        <div class="zones">
+            <div class="zone" ondragover="placer(event)" ondrop="deposer(event)">
+                <h3>Zone 1</h3>
+                <div class="element" id="e1" draggable="true" ondragstart="prendre(event)">Element 1</div>
+                <div class="element" id="e2" draggable="true" ondragstart="prendre(event)">Element 2</div>
+                <div class="element" id="e3" draggable="true" ondragstart="prendre(event)">Element 3</div>
+            </div>
+            <div class="zone" ondragover="placer(event)" ondrop="deposer(event)">
+                <h3>Zone de depot</h3>
+            </div>
+        </div>
     </fieldset>
+  <!-- 
+ondragover: declenche lq l on fait passer un element qu on glisse desuus d une zone placer(event):appel fct js appel placer; 
+ondrop: decleche lq on releache l element dans une qui accepte le depot dans div : 
+draggable="true": indique si l element peut etre deplace par glisser deposer; 
+ondragestart="prendre(event)":/ 
+ondrag : declenche au debut du glissement; 
+-->
+
     <fieldset>
         <legend id="exe15">Exercice 15</legend>
         <div class="exe15">

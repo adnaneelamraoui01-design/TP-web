@@ -209,3 +209,41 @@ var barre=document.getElementById("progression");
 barre.style.width=temp2 +"%"
 barre.textContent=temp2+"%";
 }
+//exe14
+function prendre(event){ // mémoriser l'id de l'élément déplacé
+    event.dataTransfer.setData("text", event.target.id);
+}
+
+function placer(event){ // autoriser le dépôt
+    event.preventDefault();
+}
+
+function deposer(event){
+    event.preventDefault();
+    var id = event.dataTransfer.getData("text");
+    var ele = document.getElementById(id);
+
+    // on trouve la zone (même si on dépose sur un autre élément)
+    var zone = event.target;
+    while(!zone.classList.contains("zone")){
+        zone = zone.parentNode;
+    }
+    zone.appendChild(ele);
+}/*
+event.dataTransfer.setData("text", event.target.id):
+event.dataTransfer:gerer les donnes transporte pendant glisse et depots
+setdata=d enregister une donne
+eventtarget:represente l element sur lequel l evenelt  se produit
+event.preventDefault():
+Cette instruction empêche le comportement par défaut du navigateur.
+var id = event.dataTransfer.getData("text"):ette instruction récupère l'identifiant mémorisé dans la fonction prendre().
+var zone = event.target;
+
+while (!zone.classList.contains("zone")) {
+    zone = zone.parentNode;
+}:
+event.target représente l'élément HTML sur lequel le depot de l element
+!zone.classList.contains("zone"): zoneclasslit:donne l acces aux element css
+zone = zone.parentNode:parentNode permet de remonter vers l'élément parent dans le HTML.
+
+ */
