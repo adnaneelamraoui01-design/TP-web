@@ -246,10 +246,28 @@ body.sombre{
 .element {
   background-color: #43a047;
   color: white;
-  padding: 10px;
+  padding: 300px;
   margin-bottom: 8px;
   border-radius: 4px;
   cursor: move;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*exe12*/
+.exe12{
+    text-align: center;
+}
+#info12{
+    font-weight: bold;
+}
+#conteneur12{
+    display: flex;
+    gap: 100px;
+}
+.bloc12{
+    flex: 1;
+    background-color:rgb(12, 87, 130); 
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 12px;
 }

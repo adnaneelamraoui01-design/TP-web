@@ -247,3 +247,34 @@ event.target représente l'élément HTML sur lequel le depot de l element
 zone = zone.parentNode:parentNode permet de remonter vers l'élément parent dans le HTML.
 
  */
+/*exe12 */
+function adapter12(){
+    var largeur = window.innerWidth;// donne la largeur de la fenetre en pc
+    var conteneur = document.getElementById("conteneur12");
+    var bloc4 = document.getElementById("bloc12_4");
+    var bloc5 = document.getElementById("bloc12_5");
+    var info = document.getElementById("info12");
+
+    if(largeur < 600){
+        conteneur.style.flexDirection = "column";
+        bloc4.style.display = "none";
+        bloc5.style.display = "none";// bloc 4 et 5 ne spnt plus affiche
+        info.textContent = "Petit écran (" + largeur + " px) : affichage en colonne";
+    }else if(largeur < 900){
+        // écran moyen : une ligne, on masque seulement le bloc 5
+        conteneur.style.flexDirection = "row";
+        bloc4.style.display = "block";
+        bloc5.style.display = "none";
+        info.textContent = "Écran moyen (" + largeur + " px) : 4 blocs";
+    }else{
+        // grand écran : tous les blocs en ligne
+        conteneur.style.flexDirection = "row";
+        bloc4.style.display = "block";
+        bloc5.style.display = "block";
+        info.textContent = "Grand écran (" + largeur + " px) : 5 blocs";
+    }
+}
+
+window.onresize = adapter12; // se déclenche quand on redimensionne la fenêtre
+adapter12();                 // appel au chargement de la page
+
