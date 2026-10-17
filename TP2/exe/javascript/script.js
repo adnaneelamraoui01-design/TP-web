@@ -196,3 +196,16 @@ body.classlist.contains(sombre):verifie si l element body possede actuelement la
 localstorage: stocker des donne de maniere permanante dans le nav
 .setItem(1,2) enrigistre 2 sur 1
 */
+//exe 13
+var temp2 = 0;
+function avancer(){
+ if(temp2 < 100){
+        temp2 = temp2 + 10;
+    }
+    if(temp2 > 100){
+        temp2 = 100;
+    }
+var barre=document.getElementById("progression");
+barre.style.width=temp2 +"%"
+barre.textContent=temp2+"%";
+}

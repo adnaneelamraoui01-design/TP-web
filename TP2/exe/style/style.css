@@ -204,3 +204,28 @@ body.sombre{
 .exe15{
     text-align:right;
 }
+/*exe15*/
+.exe13{
+    text-align: center;
+}
+.barre{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 15px 0 0;
+    background-color: #bbb;
+}
+#progression{
+    width: 0%;
+    background-color: rgb(34, 133, 190);
+    color: white;
+    padding: 10px 0;
+}
+#bt13{
+    cursor: pointer;
+    background-color:  rgb(214, 116, 11);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    
+}
