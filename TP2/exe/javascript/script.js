@@ -277,4 +277,17 @@ function adapter12(){
 
 window.onresize = adapter12; // se déclenche quand on redimensionne la fenêtre
 adapter12();                 // appel au chargement de la page
-
+//exe11
+function filtrer(){
+    var txt=document.getElementById("rech").value.toLowerCase();
+    var ligne=document.getElementById("tableau").getElementsByTagName("tr");
+    for ( var i=0 ;i<ligne.length;i++){
+        var content=ligne[i].textContent.toLocaleLowerCase();
+        
+        if(content.indexOf(txt)>-1){
+            ligne[i].style.display="";
+        }else{
+            ligne[i].style.display="none";
+        }
+    }
+}
