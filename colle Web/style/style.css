@@ -1,0 +1,45 @@
+
+
+/* Style de liens de nav  */
+.navbar-nav .nav-link {
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+
+/* Style de la bannière principale */
+.main-banner {
+    max-height: 450px;
+}
+
+.hero-banner-img {
+    height: 450px;
+    object-fit: cover;
+    filter: brightness(0.85);
+}
+
+/* Cadre Overlay au centre de la bannière */
+.banner-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 85%;
+    max-width: 480px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+/* Image des cartes produits */
+.product-img {
+    height: 320px;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .product-img {
+    transform: scale(1.02);
+}
+
+
+
+
+
