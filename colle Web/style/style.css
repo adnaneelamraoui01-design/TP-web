@@ -4,6 +4,7 @@
 .navbar-nav .nav-link {
     font-size: 0.95rem;
     transition: color 0.3s ease;
+     color: rouge; 
 }
 
 
@@ -18,16 +19,16 @@
     filter: brightness(0.85);
 }
 
-/* Cadre Overlay au centre de la bannière */
+/* benner dial solde */
 .banner-overlay {
     background-color: rgba(0, 0, 0, 0.6);
     width: 85%;
     max-width: 480px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
 }
 
-/* Image des cartes produits */
+/* Image  */
 .product-img {
     height: 320px;
     object-fit: cover;
