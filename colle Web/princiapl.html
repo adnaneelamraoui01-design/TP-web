@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Lee Cooper Borj Fes">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>LEE COOPER</title>
+</head>
+<body>
+
+<!--barre de nav-->
+    <!--barre de nav-->
+    <header class="bg-white border-bottom sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand fw-bold text-danger fs-3" href="princiapl.html">
+                Lee Cooper
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto text-uppercase fw-semibold">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-3" href="homme.html">Homme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-3" href="femme.html">Femme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark px-3" href="enfant.html">Enfant</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </header>
+je veux dans homme femme  des menu dans chaque menu il y a deux sections il y a all- casquette- outfits completes
+
+    <!-- Banner -->
+    <section class="container my-4">
+        <div class="main-banner position-relative overflow-hidden rounded shadow-sm">
+            <img src="image/banner.jpg" alt="Promo Banner" class="w-100 hero-banner-img">
+            
+            
+            <div class="banner-overlay position-absolute top-50 start-50 translate-middle text-center text-white p-4">
+                <h1 class="display-3 fw-bold tracking-wider mb-1">SALE</h1>
+                <p class="fs-4 fw-semibold text-uppercase mb-3">Up to 50% Off</p>
+                <p class="big text-light text-uppercase mb-3">
+                    Outfits complets & casquettes : Révélez votre style.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grille des 4 Produits -->
+    <main class="container my-5">
+        <div class="row g-4">
+            <!-- Produit 1 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <div class="position-relative bg-light">
+                        <img src="https://images.unsplash.com/photo-1608234807905-4466023792f5?auto=format&fit=crop&w=600&q=80" class="card-img-top product-img" alt="Chemise carreaux">
+                        <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-2 btn-fav" onclick="favToggle(this)">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-body px-0 pt-2">
+                        <h6 class="card-title mb-1 fw-normal">Chemise à carreaux</h6>
+                        <p class="card-text fw-bold text-secondary">299,00 DH</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <div class="position-relative bg-light">
+                        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80" class="card-img-top product-img" alt="Sweat gris">
+                        <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-2 btn-fav" onclick="favToggle(this)">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-body px-0 pt-2">
+                        <h6 class="card-title mb-1 fw-normal">Sweat à Capuche Gris</h6>
+                        <p class="card-text fw-bold text-secondary">349,00 DH</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <div class="position-relative bg-light">
+                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80" class="card-img-top product-img" alt="Pull bleu">
+                        <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-2 btn-fav" onclick="favToggle(this)">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-body px-0 pt-2">
+                        <h6 class="card-title mb-1 fw-normal">Pull Bleu Marine</h6>
+                        <p class="card-text fw-bold text-secondary">279,00 DH</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="col-6 col-md-3">
+                <div class="card border-0 h-100">
+                    <div class="position-relative bg-light">
+                        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80" class="card-img-top product-img" alt="Pull rayé">
+                        <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-2 btn-fav" onclick="favToggle(this)">
+                            <i class="bi bi-heart"></i>
+                        </button>
+                    </div>
+                    <div class="card-body px-0 pt-2">
+                        <h6 class="card-title mb-1 fw-normal">Pull Rayé Noir/Blanc</h6>
+                        <p class="card-text fw-bold text-secondary">329,00 DH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
